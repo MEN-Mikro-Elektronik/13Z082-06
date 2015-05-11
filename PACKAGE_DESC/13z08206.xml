@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
+	<name>13z08206</name>
+	<description>MDIS5 driver package for MEN 16Z082_IMPULSE</description>
+	<date>2013-06-28</date>
+	<revision>Rev_1_5</revision>
+	<docroot>DRIVERS/MDIS_LL/Z082/DOC/html/index.html</docroot>
+	<!-- Models -->
+	<modellist>
+		<model>
+			<!-- standard model -->
+			<hwname>16Z082_IMPULSE</hwname>
+			<description>Impulse counter in Chameleon FPGA</description>
+			<devnameprefix>IMPULSE</devnameprefix>
+			<devtype>MDIS</devtype>
+			<autoid>
+				<chamunitid>0x3a</chamunitid>
+				<chamv2id>82</chamv2id>
+			</autoid>
+			<bbslot>
+				<bbismodel>CHAMELEON</bbismodel>
+			</bbslot>
+			<bbslot>
+			 	<bbismodel>CHAMELEON_PCITBL</bbismodel>
+			</bbslot>
+			<swmodulelist>
+				<swmodule>
+					<name>z82</name>
+					<description>Impulse counter Driver</description>
+					<type>Low Level Driver</type>
+					<makefilepath>Z082/DRIVER/COM/driver.mak</makefilepath>
+				</swmodule>
+			</swmodulelist>
+		</model>
+		<model>
+			<!-- standard model -->
+			<hwname>16Z082_IMPULSE</hwname>
+			<modelname>16Z082_IMPULSE_IO</modelname>
+			<description>Impulse counter in Chameleon FPGA (io mapped)</description>
+			<devnameprefix>IMPULSE</devnameprefix>
+			<devtype>MDIS</devtype>
+			<autoid>
+				<chamunitid>0x3a</chamunitid>
+				<chamv2id>82</chamv2id>
+			</autoid>
+			<bbslot>
+				<bbismodel>CHAMELEON</bbismodel>
+			</bbslot>
+			<bbslot>
+				<bbismodel>CHAMELEON_PCITBL</bbismodel>
+			</bbslot>
+			<swmodulelist>
+				<swmodule>
+					<name>z82_io</name>
+					<description>Impulse counter Driver</description>
+					<type>Low Level Driver</type>
+					<makefilepath>Z082/DRIVER/COM/driver_io.mak</makefilepath>
+				</swmodule>
+			</swmodulelist>
+		</model>
+	</modellist>
+	<settinglist>
+		<setting>
+			<name>Z082_DEBOUNCE_VALUE</name>
+			<description>bits 10..0  in DEBOUNCE Reg</description>
+			<type>U_INT32</type>
+			<defaultvalue>32</defaultvalue>
+		</setting>
+	</settinglist>
+	<!-- Global software modules -->
+	<swmodulelist>
+		<swmodule internal="false">
+			<name>z82_simp</name>
+			<description>Example program for Z82 driver</description>
+			<type>Driver Specific Tool</type>
+			<makefilepath>Z082/EXAMPLE/Z82_SIMP/COM/program.mak</makefilepath>
+		</swmodule>
+	</swmodulelist>
+</package>
