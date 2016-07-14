@@ -79,8 +79,9 @@ static void PrintError(char *info);
 int main(int argc, char *argv[])
 {
 	MDIS_PATH	path;
-    u_int32 inp, out;
-	char	*device;
+    u_int32 out=0;
+	int32 inp=0;
+	char	*device=NULL;
 
 	if (argc < 2 || strcmp(argv[1],"-?")==0) {
 		printf("Syntax: z82_simp <device>\n");
