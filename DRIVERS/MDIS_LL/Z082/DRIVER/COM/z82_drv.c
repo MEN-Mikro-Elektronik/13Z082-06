@@ -12,33 +12,24 @@
  *
  *     \switches _ONE_NAMESPACE_PER_DRIVER_
  */
- /*-------------------------------[ History ]--------------------------------
- *
- * $Log: z82_drv.c,v $
- * Revision 1.6  2013/06/28 17:21:46  MRoth
- * R: driver not able to allocate 0x100 bytes of memory caused Code10 error under Windows
- * M: reduced address space to actual needed memory of IP core
- *
- * Revision 1.5  2013/06/19 16:26:59  MRoth
- * R: MDIS5 driver required
- * M: driver ported from MDIS4 to MDIS5 (according porting guide rev. 0.9)
- *
- * Revision 1.4  2006/08/04 12:35:47  ts
- * corrected wrong MACCESS use
- *
- * Revision 1.3  2006/08/02 16:34:03  ts
- * Clear counter on Init, Cosmetics
- *
- * Revision 1.2  2006/08/02 12:15:42  ts
- * added Descriptor for Debouncer
- *
- * Revision 1.1  2006/08/01 17:20:24  ts
- * Initial Revision
- *
- *
+ /*
  *---------------------------------------------------------------------------
  * (c) Copyright 2006 by MEN Mikro Elektronik GmbH, Nuremberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #define _NO_LL_HANDLE		/* ll_defs.h: don't define LL_HANDLE struct */
 

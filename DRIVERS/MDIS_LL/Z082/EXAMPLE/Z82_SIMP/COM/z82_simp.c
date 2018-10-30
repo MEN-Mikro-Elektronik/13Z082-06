@@ -10,29 +10,24 @@
  *     Required: libraries: mdis_api, usr_oss
  *     \switches (none)
  */
- /*-------------------------------[ History ]--------------------------------
- *
- * $Log: z82_simp.c,v $
- * Revision 1.4  2013/06/28 17:21:50  MRoth
- * R: cosmetics
- * M: changed output from Tacho to Impulse
- *
- * Revision 1.3  2013/06/19 16:27:03  MRoth
- * R: MDIS5 driver required
- * M: driver ported from MDIS4 to MDIS5 (according porting guide rev. 0.9)
- *
- * R: MDIS5 driver required
- * M: driver ported from MDIS4 to MDIS5 (according porting guide rev. 0.9)
- * Revision 1.2  2006/08/01 17:37:33  ts
- * Cosmetics, corrected printf formatting
- *
- * Revision 1.1  2006/08/01 17:20:30  ts
- * Initial Revision
- *
- *
+ /*
  *---------------------------------------------------------------------------
  * (c) Copyright 2003 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 static const char RCSid[]="$Id: z82_simp.c,v 1.4 2013/06/28 17:21:50 MRoth Exp $";
 
