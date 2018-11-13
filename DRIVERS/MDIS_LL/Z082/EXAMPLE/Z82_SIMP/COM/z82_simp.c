@@ -29,8 +29,6 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-static const char RCSid[]="$Id: z82_simp.c,v 1.4 2013/06/28 17:21:50 MRoth Exp $";
-
 #include <stdio.h>
 #include <string.h>
 #include <MEN/men_typs.h>
@@ -56,7 +54,6 @@ static const char RCSid[]="$Id: z82_simp.c,v 1.4 2013/06/28 17:21:50 MRoth Exp $
 /*--------------------------------------+
 |   GLOBALS                             |
 +--------------------------------------*/
-static int G_sigCount = 0;
 
 /*--------------------------------------+
 |   PROTOTYPES                          |
