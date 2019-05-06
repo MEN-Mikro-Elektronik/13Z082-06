@@ -74,6 +74,6 @@
 Simple example for driver usage
 */
 
-/*! \page dummy
+/*! \page z82dummy MEN logo
   \menimages
 */
