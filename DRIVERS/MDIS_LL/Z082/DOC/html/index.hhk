@@ -53,10 +53,6 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#m3"><param name="Name" value="LL_HANDLE"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="See Also" value="G_sigCount"><param name="Name" value="G_sigCount"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="z82__simp_8c.html#a1"><param name="Name" value="z82_simp.c"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="Ident"><param name="Name" value="Ident"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="z82__drv_8c.html#a23"><param name="Name" value="z82_drv.c"></OBJECT>
@@ -91,7 +87,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="main"><param name="Name" value="main"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="z82__simp_8c.html#a3"><param name="Name" value="z82_simp.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="z82__simp_8c.html#a1"><param name="Name" value="z82_simp.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="MDIS_PATH"><param name="Name" value="MDIS_PATH"></OBJECT>
   <UL>
@@ -114,10 +110,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structLL__HANDLE.html#m1"><param name="Name" value="LL_HANDLE"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="PrintError"><param name="Name" value="PrintError"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="z82__simp_8c.html#a2"><param name="Name" value="z82_simp.c"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="See Also" value="RCSid"><param name="Name" value="RCSid"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="z82__simp_8c.html#a0"><param name="Name" value="z82_simp.c"></OBJECT>
   </UL>
@@ -250,10 +242,8 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="z82__simp_8c.html"><param name="Name" value="z82_simp.c"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="z82__simp_8c.html#a1"><param name="Name" value="G_sigCount"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="z82__simp_8c.html#a3"><param name="Name" value="main"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="z82__simp_8c.html#a2"><param name="Name" value="PrintError"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="z82__simp_8c.html#a0"><param name="Name" value="RCSid"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="z82__simp_8c.html#a1"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="z82__simp_8c.html#a0"><param name="Name" value="PrintError"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="Z82_VARIANT"><param name="Name" value="Z82_VARIANT"></OBJECT>
   <UL>
