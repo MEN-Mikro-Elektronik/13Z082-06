@@ -21,7 +21,7 @@
 				<bbismodel>CHAMELEON</bbismodel>
 			</bbslot>
 			<bbslot>
-			 	<bbismodel>CHAMELEON_PCITBL</bbismodel>
+				<bbismodel>CHAMELEON_PCITBL</bbismodel>
 			</bbslot>
 			<swmodulelist>
 				<swmodule>
