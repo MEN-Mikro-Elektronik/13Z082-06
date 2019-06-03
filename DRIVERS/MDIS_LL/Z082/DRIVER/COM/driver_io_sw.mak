@@ -1,8 +1,6 @@
 #***************************  M a k e f i l e  *******************************
 #
 #         Author: michael.roth@men.de
-#          $Date: 2013/06/19 16:27:02 $
-#      $Revision: 1.1 $
 #
 #    Description: Makefile definitions for the Z82 driver (IO mapped, swapped)
 #
@@ -23,8 +21,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=z82_io_sw
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="13Z082-06_01_07-6-g3d8b807-dirty_2019-05-30"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
 
 MAK_SWITCH=$(SW_PREFIX)MAC_IO_MAPPED \
+		$(SW_PREFIX)$(DEF_REVISION) \
 			$(SW_PREFIX)MAC_BYTESWAP  \
 			$(SW_PREFIX)Z82_VARIANT=Z82_SW \
 

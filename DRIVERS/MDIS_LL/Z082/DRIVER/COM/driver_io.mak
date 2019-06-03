@@ -1,8 +1,6 @@
 #***************************  M a k e f i l e  *******************************
 #
 #         Author: michael.roth@men.de
-#          $Date: 2013/06/19 16:27:01 $
-#      $Revision: 1.1 $
 #
 #    Description: Makefile definitions for the Z82 driver in IO mapped (x86)
 #                 FPGAs, e.g. SC24
@@ -24,8 +22,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=z82_io
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="13Z082-06_01_07-6-g3d8b807-dirty_2019-05-30"
 
-MAK_SWITCH=$(SW_PREFIX)MAC_IO_MAPPED
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
+
+MAK_SWITCH=$(SW_PREFIX)MAC_IO_MAPPED \
+		$(SW_PREFIX)$(DEF_REVISION)
 
 MAK_LIBS=$(LIB_PREFIX)$(MEN_LIB_DIR)/desc$(LIB_SUFFIX)	\
          $(LIB_PREFIX)$(MEN_LIB_DIR)/oss$(LIB_SUFFIX)	\

@@ -3,8 +3,6 @@
  *        \file  z82_drv.c
  *
  *      \author  thomas.schnuerer@men.de
- *        $Date: 2013/06/28 17:21:46 $
- *    $Revision: 1.6 $
  *
  *      \brief   Low-level driver for Z82 Impulse controller
  *
@@ -87,6 +85,8 @@ typedef struct {
 /* include files which need LL_HANDLE */
 #include <MEN/ll_entry.h>   /* low-level driver jump table  */
 #include <MEN/z82_drv.h>    /* Z82 driver header file */
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*-----------------------------------------+
 |  PROTOTYPES                              |
@@ -717,7 +717,7 @@ static int32 Z82_Info(
  */
 static char* Ident( void )
 {
-    return( "Z82 low level driver: $Id: z82_drv.c,v 1.6 2013/06/28 17:21:46 MRoth Exp $" );
+    return( (char*) IdentString );
 }
 
 /********************************* Cleanup *********************************/

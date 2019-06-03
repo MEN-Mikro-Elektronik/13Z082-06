@@ -3,8 +3,6 @@
  *        \file  z82_drv.h
  *
  *      \author  ts@men.de
- *        $Date: 2013/06/19 16:27:05 $
- *    $Revision: 3.2 $
  *
  *       \brief  Header file for Z82 driver containing
  *               Z82 specific status codes and Z82 function prototypes

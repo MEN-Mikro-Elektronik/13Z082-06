@@ -1,8 +1,6 @@
 /*!
  *         \file z82_simp.c
  *       \author thomas.schnuerer@men.de
- *        $Date: 2013/06/28 17:21:50 $
- *    $Revision: 1.4 $
  *
  *       \brief  Simple example program for the Z82 Impulse driver
  *				 needs a Impulse Signal fed in and derives a speed from it

@@ -3,8 +3,6 @@
  *        \file  z82_doc.c
  *
  *      \author  thomas.schnuerer@men.de
- *        $Date: 2013/06/28 17:21:48 $
- *    $Revision: 1.3 $
  *
  *      \brief   User documentation for the MDIS5 Z82 Impulse driver
  *
