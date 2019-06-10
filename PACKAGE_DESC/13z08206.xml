@@ -2,8 +2,8 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
 	<name>13z08206</name>
 	<description>MDIS5 driver package for MEN 16Z082_IMPULSE</description>
-	<date>2016-07-14</date>
-	<revision>1.6</revision>
+	<date>2019-06-07</date>
+	<revision>13Z082-06_01_07-8-g3fa9344</revision>
 	<docroot>DRIVERS/MDIS_LL/Z082/DOC/html/index.html</docroot>
 	<!-- Models -->
 	<modellist>
