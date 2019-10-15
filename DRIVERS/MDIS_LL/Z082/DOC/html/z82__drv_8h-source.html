@@ -23,85 +23,85 @@
 <center>
 <a class="qindex" href="index.html">Main Page</a> &nbsp; <a class="qindex" href="annotated.html">Data Structures</a> &nbsp; <a class="qindex" href="files.html">File List</a> &nbsp; <a class="qindex" href="functions.html">Data Fields</a> &nbsp; <a class="qindex" href="globals.html">Globals</a> &nbsp; <a class="qindex" href="pages.html">Related Pages</a> &nbsp; <a class="qindex" href="examples.html">Examples</a> &nbsp; </center>
 <hr><h1>z82_drv.h</h1><a href="z82__drv_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre>00001 <span class="comment">/***********************  I n c l u d e  -  F i l e  ***********************/</span>
-00015  <span class="comment">/*</span>
-00016 <span class="comment"> *---------------------------------------------------------------------------</span>
-00017 <span class="comment"> * Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH</span>
-00018 <span class="comment"> ****************************************************************************/</span>
-00019 <span class="comment">/*</span>
-00020 <span class="comment">* This program is free software: you can redistribute it and/or modify</span>
-00021 <span class="comment">* it under the terms of the GNU General Public License as published by</span>
-00022 <span class="comment">* the Free Software Foundation, either version 2 of the License, or</span>
-00023 <span class="comment">* (at your option) any later version.</span>
-00024 <span class="comment">*</span>
-00025 <span class="comment">* This program is distributed in the hope that it will be useful,</span>
-00026 <span class="comment">* but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
-00027 <span class="comment">* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
-00028 <span class="comment">* GNU General Public License for more details.</span>
-00029 <span class="comment">*</span>
-00030 <span class="comment">* You should have received a copy of the GNU General Public License</span>
-00031 <span class="comment">* along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
-00032 <span class="comment">*/</span>
-00033 
-00034 <span class="preprocessor">#ifndef _Z82_DRV_H</span>
-00035 <span class="preprocessor"></span><span class="preprocessor">#define _Z82_DRV_H</span>
-00036 <span class="preprocessor"></span>
-00037 <span class="preprocessor">#ifdef __cplusplus</span>
-00038 <span class="preprocessor"></span>      <span class="keyword">extern</span> <span class="stringliteral">"C"</span> {
-00039 <span class="preprocessor">#endif</span>
-00040 <span class="preprocessor"></span>
-00041 
-00042 <span class="comment">/*-----------------------------------------+</span>
-00043 <span class="comment">|  TYPEDEFS                                |</span>
-00044 <span class="comment">+-----------------------------------------*/</span>
-00045 <span class="comment">/* none */</span>
-00046 
-00047 <span class="comment">/*-----------------------------------------+</span>
-00048 <span class="comment">|  DEFINES                                 |</span>
-00049 <span class="comment">+-----------------------------------------*/</span>
-<a name="l00054"></a><a class="code" href="z82__drv_8h.html#a0">00054</a> <span class="preprocessor">#define Z82_CLR_RESULT  M_DEV_OF+0x00   </span>
-<a name="l00055"></a><a class="code" href="z82__drv_8h.html#a1">00055</a> <span class="preprocessor">#define Z82_GET_RESULT  M_DEV_OF+0x01   </span>
-<a name="l00056"></a><a class="code" href="z82__drv_8h.html#a2">00056</a> <span class="preprocessor">#define Z82_GET_OVF     M_DEV_OF+0x02   </span>
-<a name="l00057"></a><a class="code" href="z82__drv_8h.html#a3">00057</a> <span class="preprocessor">#define Z82_DEBOUNCE    M_DEV_OF+0x05   </span>
-00060 <span class="preprocessor">#ifndef  Z82_VARIANT</span>
-<a name="l00061"></a><a class="code" href="z82__drv_8h.html#a4">00061</a> <span class="preprocessor"></span><span class="preprocessor"># define Z82_VARIANT       Z82</span>
-00062 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-00063 <span class="preprocessor"></span>
-<a name="l00064"></a><a class="code" href="z82__drv_8h.html#a5">00064</a> <span class="preprocessor"># define _Z82_GLOBNAME(var,name) var##_##name</span>
-00065 <span class="preprocessor"></span><span class="preprocessor">#ifndef _ONE_NAMESPACE_PER_DRIVER_</span>
-<a name="l00066"></a><a class="code" href="z82__drv_8h.html#a6">00066</a> <span class="preprocessor"></span><span class="preprocessor"># define Z82_GLOBNAME(var,name) _Z82_GLOBNAME(var,name)</span>
-00067 <span class="preprocessor"></span><span class="preprocessor">#else</span>
-00068 <span class="preprocessor"></span><span class="preprocessor"># define Z82_GLOBNAME(var,name) _Z82_GLOBNAME(Z82,name)</span>
-00069 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+00013  <span class="comment">/*</span>
+00014 <span class="comment"> *---------------------------------------------------------------------------</span>
+00015 <span class="comment"> * Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH</span>
+00016 <span class="comment"> ****************************************************************************/</span>
+00017 <span class="comment">/*</span>
+00018 <span class="comment">* This program is free software: you can redistribute it and/or modify</span>
+00019 <span class="comment">* it under the terms of the GNU General Public License as published by</span>
+00020 <span class="comment">* the Free Software Foundation, either version 2 of the License, or</span>
+00021 <span class="comment">* (at your option) any later version.</span>
+00022 <span class="comment">*</span>
+00023 <span class="comment">* This program is distributed in the hope that it will be useful,</span>
+00024 <span class="comment">* but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+00025 <span class="comment">* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+00026 <span class="comment">* GNU General Public License for more details.</span>
+00027 <span class="comment">*</span>
+00028 <span class="comment">* You should have received a copy of the GNU General Public License</span>
+00029 <span class="comment">* along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
+00030 <span class="comment">*/</span>
+00031 
+00032 <span class="preprocessor">#ifndef _Z82_DRV_H</span>
+00033 <span class="preprocessor"></span><span class="preprocessor">#define _Z82_DRV_H</span>
+00034 <span class="preprocessor"></span>
+00035 <span class="preprocessor">#ifdef __cplusplus</span>
+00036 <span class="preprocessor"></span>      <span class="keyword">extern</span> <span class="stringliteral">"C"</span> {
+00037 <span class="preprocessor">#endif</span>
+00038 <span class="preprocessor"></span>
+00039 
+00040 <span class="comment">/*-----------------------------------------+</span>
+00041 <span class="comment">|  TYPEDEFS                                |</span>
+00042 <span class="comment">+-----------------------------------------*/</span>
+00043 <span class="comment">/* none */</span>
+00044 
+00045 <span class="comment">/*-----------------------------------------+</span>
+00046 <span class="comment">|  DEFINES                                 |</span>
+00047 <span class="comment">+-----------------------------------------*/</span>
+<a name="l00052"></a><a class="code" href="z82__drv_8h.html#a0">00052</a> <span class="preprocessor">#define Z82_CLR_RESULT  M_DEV_OF+0x00   </span>
+<a name="l00053"></a><a class="code" href="z82__drv_8h.html#a1">00053</a> <span class="preprocessor">#define Z82_GET_RESULT  M_DEV_OF+0x01   </span>
+<a name="l00054"></a><a class="code" href="z82__drv_8h.html#a2">00054</a> <span class="preprocessor">#define Z82_GET_OVF     M_DEV_OF+0x02   </span>
+<a name="l00055"></a><a class="code" href="z82__drv_8h.html#a3">00055</a> <span class="preprocessor">#define Z82_DEBOUNCE    M_DEV_OF+0x05   </span>
+00058 <span class="preprocessor">#ifndef  Z82_VARIANT</span>
+<a name="l00059"></a><a class="code" href="z82__drv_8h.html#a4">00059</a> <span class="preprocessor"></span><span class="preprocessor"># define Z82_VARIANT       Z82</span>
+00060 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+00061 <span class="preprocessor"></span>
+<a name="l00062"></a><a class="code" href="z82__drv_8h.html#a5">00062</a> <span class="preprocessor"># define _Z82_GLOBNAME(var,name) var##_##name</span>
+00063 <span class="preprocessor"></span><span class="preprocessor">#ifndef _ONE_NAMESPACE_PER_DRIVER_</span>
+<a name="l00064"></a><a class="code" href="z82__drv_8h.html#a6">00064</a> <span class="preprocessor"></span><span class="preprocessor"># define Z82_GLOBNAME(var,name) _Z82_GLOBNAME(var,name)</span>
+00065 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+00066 <span class="preprocessor"></span><span class="preprocessor"># define Z82_GLOBNAME(var,name) _Z82_GLOBNAME(Z82,name)</span>
+00067 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+00068 <span class="preprocessor"></span>
+<a name="l00069"></a><a class="code" href="z82__drv_8h.html#a7">00069</a> <span class="preprocessor">#define __Z82_GetEntry          Z82_GLOBNAME(Z82_VARIANT, GetEntry)</span>
 00070 <span class="preprocessor"></span>
-<a name="l00071"></a><a class="code" href="z82__drv_8h.html#a7">00071</a> <span class="preprocessor">#define __Z82_GetEntry          Z82_GLOBNAME(Z82_VARIANT, GetEntry)</span>
-00072 <span class="preprocessor"></span>
-00073 <span class="comment">/*-----------------------------------------+</span>
-00074 <span class="comment">|  PROTOTYPES                              |</span>
-00075 <span class="comment">+-----------------------------------------*/</span>
-00076 <span class="preprocessor">#ifdef _LL_DRV_</span>
-00077 <span class="preprocessor"></span><span class="preprocessor">#ifndef _ONE_NAMESPACE_PER_DRIVER_</span>
-00078 <span class="preprocessor"></span>    <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="z82__drv_8h.html#a7">__Z82_GetEntry</a>(LL_ENTRY* drvP);
-00079 <span class="preprocessor">#endif</span>
-00080 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* _LL_DRV_ */</span>
-00081 
-00082 <span class="comment">/*-----------------------------------------+</span>
-00083 <span class="comment">|  BACKWARD COMPATIBILITY TO MDIS4         |</span>
-00084 <span class="comment">+-----------------------------------------*/</span>
-00085 <span class="preprocessor">#ifndef U_INT32_OR_64</span>
-00086 <span class="preprocessor"></span> <span class="comment">/* we have an MDIS4 men_types.h and mdis_api.h included */</span>
-00087  <span class="comment">/* only 32bit compatibility needed!                     */</span>
-<a name="l00088"></a><a class="code" href="z82__drv_8h.html#a8">00088</a> <span class="preprocessor"> #define INT32_OR_64  int32</span>
-<a name="l00089"></a><a class="code" href="z82__drv_8h.html#a9">00089</a> <span class="preprocessor"></span><span class="preprocessor"> #define U_INT32_OR_64 u_int32</span>
-<a name="l00090"></a><a class="code" href="z82__drv_8h.html#a10">00090</a> <span class="preprocessor"></span> <span class="keyword">typedef</span> <a class="code" href="z82__drv_8h.html#a8">INT32_OR_64</a>  <a class="code" href="z82__drv_8h.html#a10">MDIS_PATH</a>;
-00091 <span class="preprocessor">#endif </span><span class="comment">/* U_INT32_OR_64 */</span>
-00092 
-00093 
-00094 <span class="preprocessor">#ifdef __cplusplus</span>
-00095 <span class="preprocessor"></span>      }
-00096 <span class="preprocessor">#endif</span>
-00097 <span class="preprocessor"></span>
-00098 <span class="preprocessor">#endif </span><span class="comment">/* _Z82_DRV_H */</span>
-00099 
+00071 <span class="comment">/*-----------------------------------------+</span>
+00072 <span class="comment">|  PROTOTYPES                              |</span>
+00073 <span class="comment">+-----------------------------------------*/</span>
+00074 <span class="preprocessor">#ifdef _LL_DRV_</span>
+00075 <span class="preprocessor"></span><span class="preprocessor">#ifndef _ONE_NAMESPACE_PER_DRIVER_</span>
+00076 <span class="preprocessor"></span>    <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="z82__drv_8h.html#a7">__Z82_GetEntry</a>(LL_ENTRY* drvP);
+00077 <span class="preprocessor">#endif</span>
+00078 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* _LL_DRV_ */</span>
+00079 
+00080 <span class="comment">/*-----------------------------------------+</span>
+00081 <span class="comment">|  BACKWARD COMPATIBILITY TO MDIS4         |</span>
+00082 <span class="comment">+-----------------------------------------*/</span>
+00083 <span class="preprocessor">#ifndef U_INT32_OR_64</span>
+00084 <span class="preprocessor"></span> <span class="comment">/* we have an MDIS4 men_types.h and mdis_api.h included */</span>
+00085  <span class="comment">/* only 32bit compatibility needed!                     */</span>
+<a name="l00086"></a><a class="code" href="z82__drv_8h.html#a8">00086</a> <span class="preprocessor"> #define INT32_OR_64  int32</span>
+<a name="l00087"></a><a class="code" href="z82__drv_8h.html#a9">00087</a> <span class="preprocessor"></span><span class="preprocessor"> #define U_INT32_OR_64 u_int32</span>
+<a name="l00088"></a><a class="code" href="z82__drv_8h.html#a10">00088</a> <span class="preprocessor"></span> <span class="keyword">typedef</span> <a class="code" href="z82__drv_8h.html#a8">INT32_OR_64</a>  <a class="code" href="z82__drv_8h.html#a10">MDIS_PATH</a>;
+00089 <span class="preprocessor">#endif </span><span class="comment">/* U_INT32_OR_64 */</span>
+00090 
+00091 
+00092 <span class="preprocessor">#ifdef __cplusplus</span>
+00093 <span class="preprocessor"></span>      }
+00094 <span class="preprocessor">#endif</span>
+00095 <span class="preprocessor"></span>
+00096 <span class="preprocessor">#endif </span><span class="comment">/* _Z82_DRV_H */</span>
+00097 
 </pre></div>
 	</div>
 </div>
@@ -109,8 +109,7 @@
 <div class="footer">
 <!-- Footer -->
 	<p class="footer">
-	Generated for Z82 MDIS Driver using <a href="http://www.doxygen.org">doxygen</a>.<br>
-	Copyright &copy; 2019 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
+	Generated for Z82 MDIS Driver using <a href="http://www.doxygen.org">doxygen</a>. All Rights Reserved.
 	</p>
 </div>
 
